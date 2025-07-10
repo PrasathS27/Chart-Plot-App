@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from 'next/link';
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -40,7 +41,9 @@ export default function GraphPage() {
 
   return (
     <div style={{ padding: "2rem" }}>
-      <h1>Graph View</h1>
+      {/* <Link href="/graph">
+        <h1>Graph View</h1>
+      </Link> */}
       <Line data={chartData} />
     </div>
   );

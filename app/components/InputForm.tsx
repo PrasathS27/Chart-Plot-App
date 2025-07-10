@@ -17,9 +17,9 @@ const InputForm = () => {
 
   return (
     <>
-      <input type="number" value={x} onChange={e => setX(e.target.value)} />
-      <input type="number" value={y} onChange={e => setY(e.target.value)} />
-      <button onClick={handleSubmit}>Add</button>
+      <input type="number"  placeholder="X Value" value={x} onChange={e => setX(e.target.value)} />
+      <input type="number" placeholder="Y Value" value={y} onChange={e => setY(e.target.value)} />
+      <button onClick={handleSubmit}>Add Data</button>
       {/* <Link href="/graph"><button>Go to Graph</button></Link> */}
     </>
   );

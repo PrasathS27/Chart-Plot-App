@@ -17,7 +17,6 @@ export default function Home() {
 
   return (
     <div style={{ padding: "2rem" }}>
-      <h1>Plot Chart</h1>
       <input
         type="number"
         placeholder="X Value"
@@ -31,7 +30,7 @@ export default function Home() {
         onChange={(e) => setY(e.target.value)}
       />
       <button onClick={handleSubmit}>Add Data</button>
-      <button onClick={() => router.push("/graph")}>View Graph</button>
+      {/* <button onClick={() => router.push("/graph")}>View Graph</button> */}
     </div>
   );
 }
